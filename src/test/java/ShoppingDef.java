@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Selenide;
 import data.Configuration;
 import net.serenitybdd.core.Serenity;
 import net.thucydides.core.annotations.Step;
@@ -108,10 +109,11 @@ public class ShoppingDef {
     @Step("able to take a screenshot")
     public void customAssertWithScreenShot() {
         try {
-            Assert.assertEquals(3, shoppingCartSummaryPage.getShippingCost(), doubleDelta);
+            Assert.assertEquals(3.543, shoppingCartSummaryPage.getShippingCost(), doubleDelta);
         } catch (AssertionError error) {
-            Serenity.takeScreenshot();
-            Assert.fail("Test failed");
+//            TODO: link serenity with selenide screenshot to include it in the report index.html
+            Selenide.screenshot("custom screenshot");
+            Assert.fail(String.format("shipping costs not as expected: %s", error));
         }
     }
 }
