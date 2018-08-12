@@ -1,0 +1,5 @@
+baseUrl: http://automationpractice.com
+reqResUrl: https://reqres.in
+shoppingUser:
+  email: test_auto@mailinator.com
+  password: BJSSTest
