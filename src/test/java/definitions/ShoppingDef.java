@@ -1,3 +1,5 @@
+package definitions;
+
 import com.codeborne.selenide.Selenide;
 import data.Configuration;
 import net.serenitybdd.core.Serenity;

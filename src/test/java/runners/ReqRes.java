@@ -1,3 +1,6 @@
+package runners;
+
+import definitions.ReqResDef;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Steps;
 import org.junit.After;

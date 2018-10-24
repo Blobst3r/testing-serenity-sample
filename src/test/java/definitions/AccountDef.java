@@ -1,3 +1,5 @@
+package definitions;
+
 import net.thucydides.core.annotations.Step;
 import pages.account.MyAccountPage;
 import pages.account.OrderHistory;

@@ -1,3 +1,7 @@
+package runners;
+
+import definitions.AccountDef;
+import definitions.ShoppingDef;
 import framework.BasePage;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Steps;

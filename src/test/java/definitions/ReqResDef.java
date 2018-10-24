@@ -1,3 +1,5 @@
+package definitions;
+
 import com.fasterxml.jackson.databind.util.JSONPObject;
 import data.Configuration;
 import io.restassured.RestAssured;
